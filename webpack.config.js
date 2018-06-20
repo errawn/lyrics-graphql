@@ -20,6 +20,10 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    disableDotRule: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'client/index.html'
